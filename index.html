@@ -377,9 +377,6 @@
       `Faltan ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos`;
   }
 
-  setInterval(actualizarContador, 1000);
-  actualizarContador();
-
 document.getElementById('verPremioBtn').onclick = () => {
   document.getElementById('premioOverlay').style.display = 'flex';
 };
@@ -420,73 +417,6 @@ document.querySelectorAll('#filtros button').forEach(btn => {
 
 <script>
   document.getElementById('anio').textContent = new Date().getFullYear();
-  function formatearFechaISO(fechaISO) {
-    const fecha = new Date(fechaISO);
-    const dia = String(fecha.getDate()).padStart(2, '0');
-    const mes = String(fecha.getMonth() + 1).padStart(2, '0');
-    const anio = fecha.getFullYear();
-    return `${dia}/${mes}/${anio}`;
-  }
-
-  fetch('https://ideasoft.com.co/loteria__/resultados')
-    .then(res => res.json())
-    .then(data => {
-      const premios = data
-        .filter(item => item.PremioNombre === 'PREMIO MAYOR')
-        .sort((a, b) => new Date(a.Fecha) - new Date(b.Fecha))
-        .slice(-10); // último 10 en orden cronológico
-
-      const contenedor = document.getElementById('carruselContenido');
-
-      // Agrega dos veces los resultados para efecto de loop
-      for (let i = 0; i < 2; i++) {
-        premios.forEach(p => {
-          const div = document.createElement('div');
-          div.className = 'carta-loteria';
-          div.innerHTML = `
-            <strong style="font-size: 16px;">🎫 ${p.Billete}</strong><br>
-            <span style="color: #555;">📅 ${formatearFechaISO(p.Fecha)}</span>
-          `;
-          contenedor.appendChild(div);
-        });
-      }
-
-      iniciarCarruselInfinito();
-    })
-    .catch(err => {
-      console.error('Error al cargar resultados:', err);
-      const contenedor = document.getElementById('carruselContenido');
-      contenedor.innerHTML = '<div style="color:red;">No se pudieron cargar los resultados</div>';
-    });
-
-    function iniciarCarruselInfinito() {
-      const wrapper = document.getElementById('carruselWrapper');
-      const contenido = document.getElementById('carruselContenido');
-
-      let scrollPos = 0;
-      const velocidad = 0.5;
-      let animacionId;
-
-      function animar() {
-        scrollPos += velocidad;
-        if (scrollPos >= contenido.scrollWidth / 2) {
-          scrollPos = 0;
-        }
-        wrapper.scrollLeft = scrollPos;
-        animacionId = requestAnimationFrame(animar);
-      }
-
-      wrapper.addEventListener('mouseenter', () => {
-        cancelAnimationFrame(animacionId);
-      });
-
-      wrapper.addEventListener('mouseleave', () => {
-        animar();
-      });
-
-      animar();
-    }
-
 </script>
 
 </body>
