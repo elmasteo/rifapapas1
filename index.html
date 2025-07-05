@@ -387,21 +387,6 @@ document.getElementById('premioOverlay').onclick = (e) => {
   }
 };
 
-document.querySelectorAll('.qr-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const src = btn.dataset.img;
-    const img = document.getElementById('qrImg');
-    img.src = src;
-    document.getElementById('qrOverlay').style.display = 'flex';
-  });
-});
-
-document.getElementById('qrOverlay').onclick = (e) => {
-  if (e.target.id === 'qrOverlay') {
-    e.target.style.display = 'none';
-  }
-};
-
 document.querySelectorAll('#filtros button').forEach(btn => {
   btn.addEventListener('click', () => {
     const filtro = btn.dataset.filtro;
