@@ -51,7 +51,9 @@
   },
   {
     "numero": "11",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "fafantes",
+    "telefono": "3185343666"
   },
   {
     "numero": "12",
