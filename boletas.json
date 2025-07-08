@@ -31,7 +31,9 @@
   },
   {
     "numero": "07",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Alejandra Maldonado",
+    "telefono": "3203553522"
   },
   {
     "numero": "08",
