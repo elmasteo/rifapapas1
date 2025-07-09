@@ -63,7 +63,9 @@
   },
   {
     "numero": "12",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Juan Andrés Tolosa Santana",
+    "telefono": "3205102716"
   },
   {
     "numero": "13",
