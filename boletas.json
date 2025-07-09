@@ -133,7 +133,9 @@
   },
   {
     "numero": "28",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Eila",
+    "telefono": "3144678499"
   },
   {
     "numero": "29",
