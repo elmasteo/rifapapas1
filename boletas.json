@@ -9,7 +9,9 @@
   },
   {
     "numero": "02",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Eila",
+    "telefono": "3144678499"
   },
   {
     "numero": "03",
