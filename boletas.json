@@ -7,7 +7,9 @@
   },
   {
     "numero": "01",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Vasseur",
+    "telefono": "7401061241"
   },
   {
     "numero": "02",
