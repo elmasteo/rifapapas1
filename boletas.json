@@ -415,7 +415,9 @@
   },
   {
     "numero": "81",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Brayan Muñoz",
+    "telefono": "3006233237"
   },
   {
     "numero": "82",
