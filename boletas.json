@@ -297,7 +297,9 @@
   },
   {
     "numero": "56",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "fafantes",
+    "telefono": "3185343666"
   },
   {
     "numero": "57",
