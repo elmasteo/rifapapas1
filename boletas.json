@@ -99,7 +99,9 @@
   },
   {
     "numero": "18",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Pastor Moreno Tique",
+    "telefono": "3143540447"
   },
   {
     "numero": "19",
