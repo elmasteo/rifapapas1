@@ -189,7 +189,9 @@
   },
   {
     "numero": "33",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Lorena",
+    "telefono": "3124020807"
   },
   {
     "numero": "34",
