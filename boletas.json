@@ -321,7 +321,9 @@
   },
   {
     "numero": "58",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Alan Quintana",
+    "telefono": "3144678499"
   },
   {
     "numero": "59",
