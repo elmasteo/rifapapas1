@@ -451,7 +451,9 @@
   },
   {
     "numero": "80",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Andres",
+    "telefono": "3103738727"
   },
   {
     "numero": "81",
