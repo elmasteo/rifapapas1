@@ -273,7 +273,9 @@
   },
   {
     "numero": "46",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Alan Quintana (Javier Ricardo)",
+    "telefono": "3144678499"
   },
   {
     "numero": "47",
