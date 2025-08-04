@@ -257,7 +257,9 @@
   },
   {
     "numero": "43",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Alan Quintana (Samuel)",
+    "telefono": "3144678499"
   },
   {
     "numero": "44",
