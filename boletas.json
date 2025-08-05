@@ -307,7 +307,9 @@
   },
   {
     "numero": "52",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Miguel perpiñan",
+    "telefono": "3002100838"
   },
   {
     "numero": "53",
