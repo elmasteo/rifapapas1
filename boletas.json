@@ -431,7 +431,9 @@
   },
   {
     "numero": "73",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Alejandra Parra",
+    "telefono": "3184456510"
   },
   {
     "numero": "74",
