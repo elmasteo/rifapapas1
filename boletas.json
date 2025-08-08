@@ -539,7 +539,9 @@
   },
   {
     "numero": "90",
-    "estado": "libre"
+    "estado": "pendiente",
+    "nombre": "Alejandra Maldonado",
+    "telefono": "3203553522"
   },
   {
     "numero": "91",
